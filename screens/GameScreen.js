@@ -26,6 +26,7 @@ function GameScreen({ userNumber, onGameOver }) {
     const [currentGuess, setCurrentGuess] = useState(initialGuess);
     const [guessRounds, setGuessRounds] = useState([initialGuess]);
     const { width, height } = useWindowDimensions();
+    console.log("hi");
 
     useEffect(() => {
         if (currentGuess === userNumber) {
